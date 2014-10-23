@@ -1,6 +1,6 @@
 FROM ubuntu:14.04
 
-MAINTAINER silasdavis
+MAINTAINER hwasungmars
 RUN apt-get -y update
 RUN apt-get -y upgrade
 RUN apt-get install -y openjdk-7-jre-headless wget ruby

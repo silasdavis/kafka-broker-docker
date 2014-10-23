@@ -4,7 +4,7 @@ zookeeper:
     - "2181:2181"
 
 kafkaBroker1:
-  image: silasdavis/kafka-broker
+  image: hwasungmars/kafka-broker
   ports:
     - "9092:9092"
   links:
@@ -15,7 +15,7 @@ kafkaBroker1:
     TOPICS: "topic1,topic2"
 
 kafkaBroker2:
-  image: silasdavis/kafka-broker
+  image: hwasungmars/kafka-broker
   ports:
     - "9093:9093"
   links:
