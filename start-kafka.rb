@@ -5,7 +5,6 @@ require 'erb'
 KDT='[Kafka Docker Runner]'
 
 kafka_home = ENV['KAFKA_HOME']
-topics = (ENV['TOPICS'] || "").split(',')
 @local_ip = Socket.ip_address_list.find(&:ipv4_private?).ip_address
 @zk_ip = ENV['ZK_PORT_2181_TCP_ADDR'] 
 @broker_id = ENV['BROKER_ID']

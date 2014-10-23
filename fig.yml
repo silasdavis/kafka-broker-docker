@@ -12,7 +12,6 @@ kafkaBroker1:
   environment:
     BROKER_ID: 1
     PORT: 9092
-    TOPICS: "topic1,topic2"
 
 kafkaBroker2:
   image: hwasungmars/kafka-broker
@@ -23,5 +22,3 @@ kafkaBroker2:
   environment:
     BROKER_ID: 2
     PORT: 9093
-    TOPICS: "topic1,topic2"
-
